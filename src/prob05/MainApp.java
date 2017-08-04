@@ -4,7 +4,6 @@ public class MainApp {
 	public static void main(String[] args) {
 		try {
 			
-			
 			MyStack<String> stack = new MyStack<String>(3);
 			stack.push("Hello");
 			stack.push("World");
@@ -27,6 +26,7 @@ public class MainApp {
 			stack.push("Hello");
 
 			System.out.println(stack.pop());
+			//하나 넣고 2개 뽑으려 했으니 Exception 발생!!
 			System.out.println(stack.pop());
 			
 		} catch ( MyStackException ex) {
