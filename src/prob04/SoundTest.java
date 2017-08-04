@@ -9,7 +9,7 @@ public class SoundTest {
 		printSound( new Duck() );
 	}
 	
-	public static void printSound(Soundable soundable)
+	private static void printSound(Soundable soundable)
 	{
 		System.out.println(soundable.sound());
 	}
