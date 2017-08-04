@@ -26,15 +26,4 @@ public class ShapeTest {
 		}
 
 	}
-	
-/*	public static void print(Shape s1) {
-		
-		System.out.println("area : " + s1.getArea());
-		System.out.println("perimeter : " + s1 .getPerimeter());
-		
-		
-		
-		System.out.println("new area : " + s1.getArea());
-	}*/
-
 }
