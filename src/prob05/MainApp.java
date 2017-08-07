@@ -1,6 +1,14 @@
 package prob05;
 
 public class MainApp {
+	
+	//특정 부모를 상속받고 있는 애들만 넣게 하겠다! --> wildCard를 사용하여 제네릭 타입 제한하기
+	//파라미터 값으로 받을 때, Number을 상속받고 있는 mystack만 파라미터 값으로 받겠다.
+	//생성할 때 사용한다기보다 이렇게 파라미터 값으로 받거나 그럴때 사용한다.ㄴㄴㄴㄴ
+	public void test(MyStack<? extends Number> mystack) {
+		
+	}
+	
 	public static void main(String[] args) {
 		try {
 			
@@ -28,6 +36,13 @@ public class MainApp {
 			System.out.println(stack.pop());
 			//하나 넣고 2개 뽑으려 했으니 Exception 발생!!
 			System.out.println(stack.pop());
+			
+			
+			//WildCard 모든 객체가 다 들어와도 된다.
+			MyStack<?> numberStack = new MyStack<String>(10);
+			
+			
+			
 			
 		} catch ( MyStackException ex) {
 			System.out.println( ex );
